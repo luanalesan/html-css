@@ -12,18 +12,26 @@
 
 *{
     margin: 0px;
+    padding: 0px;
+}
+
+body{
+    min-height: 100vh;
 }
 
 header{
     background-color: black;
-    color: white;
-    font-family: var(--fonte1);
-    font-size: 50pt;
+    color: white; 
     text-align: center;
     padding: 40pt;
-    font-weight: normal;
+ }
 
+header > h1 {
+    font-family: var(--fonte1);
+    font-size: 8vw;
+    font-variant: small-caps;
 }
+
 header > p {
     font-size: 11pt;
     font-family: var(--fontepadrao);
@@ -44,8 +52,10 @@ a {
 
 section {
     font-family: var(--fonte2);
-    padding: 50px;
-    font-size: 40pt;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    font-size: 3vw;
+    padding-left: 50px;
 }
 #sec1 {
     background-color: white;
@@ -60,13 +70,17 @@ section {
     color: white;
     background-image: url("../imagens/background001.jpg");
     background-position: center center;
+    background-size: cover;
     background-attachment: fixed;
+    text-shadow: 1px 1px 0px black;
+    box-shadow: inset 6px 6px 13px black;
         
 }
 
 #sec2 > p {
     background-color: rgba(1, 19, 11, 0.904);
-    width: 640px;
+    display: inline-block;
+    padding: 5px;
 }
 
 #sec3 {
@@ -79,12 +93,15 @@ section {
     background-color: black;
     background-image: url("../imagens/background002.jpg");
     background-attachment: fixed;
-  
+    text-shadow: 1px 1px 0px black;
+    box-shadow: inset 6px 6px 13px black;
+    background-size: cover;
 }
 
 #sec4 > p {
     background-color: rgba(0, 0, 0, 0.493);
-    width: 640px;
+    display: inline-block;
+    padding: 5px;
 }
 
 #sec5 {
